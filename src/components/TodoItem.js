@@ -31,7 +31,7 @@ const TodoItem = (props) => {
         onChange={markComplete.bind(this, todo.id)}
         checked={todo.completed}
       />
-      {todo.title}
+      {todo.id}-{todo.title}
       <button
         onClick={deleteTodo.bind(this, todo.id)}
         style={deleteBunttonStyle}
